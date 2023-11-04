@@ -128,6 +128,7 @@ sub al, 1       ; 00000000 - 00000001 = 11111111 (255)    Borrow from 9th bit, s
 
 ; Overflow flag (indicates signed wrap-around)
 ; - OF = 1 if result wraps around the signed boundary
+; - Otherwise, OF = 0.
 
 mov al, 126     ; Remember: The signed range of 1 byte is [-128, 127].
 add al, 1       ; 01111110 + 00000001 = 01111111 (127)     Still within signed range, so OF = 0.
@@ -136,6 +137,24 @@ add al, 1       ; 01111111 + 00000001 = 10000000 (-128)    Wrapped around signed
 mov al, -127    ; Remember: The signed range of 1 byte is [-128, 127].
 sub al, 1       ; 10000001 - 00000001 = 10000000 (-128)    Still within signed range, so OF = 0.
 sub al, 1       ; 10000000 - 00000001 = 01111111 (127)     Wrapped around signed range, so OF = 1.
+
+mov al, 127
+add al, 1       ; 127 + 1 = -128    OF = 1
+
+mov al, -128
+add al, -5      ; -128 + -5 = 123   OF = 1
+
+mov al, -128
+add al, 1       ; -128 + 1 = -127   OF = 0
+
+mov al, -128
+sub al, 5       ; -128 - 5 = 123    OF = 1
+
+mov al, -128
+sub al, -5      ; -128 - (-5) = -123     OF = 0
+
+mov al, 127
+sub al, 255     ; 127 - 255 = 127 - (-1) = 127 + 1 = -128    OF = 1
 
 ;----------------------------------------------------------
 ; NEG
