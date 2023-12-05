@@ -138,23 +138,45 @@ mov al, -127    ; Remember: The signed range of 1 byte is [-128, 127].
 sub al, 1       ; 10000001 - 00000001 = 10000000 (-128)    Still within signed range, so OF = 0.
 sub al, 1       ; 10000000 - 00000001 = 01111111 (127)     Wrapped around signed range, so OF = 1.
 
-mov al, 127
-add al, 1       ; 127 + 1 = -128    OF = 1
-
-mov al, -128
-add al, -5      ; -128 + -5 = 123   OF = 1
-
-mov al, -128
-add al, 1       ; -128 + 1 = -127   OF = 0
-
-mov al, -128
-sub al, 5       ; -128 - 5 = 123    OF = 1
-
-mov al, -128
-sub al, -5      ; -128 - (-5) = -123     OF = 0
+; More flags examples (all 8-bit examples)
 
 mov al, 127
-sub al, 255     ; 127 - 255 = 127 - (-1) = 127 + 1 = -128    OF = 1
+add al, 1       ; Signed:   127 + 1 = -128      OF = 1  Crossed signed boundary
+                ; Unsigned: 127 + 1 = 128       CF = 0  Did not cross unsigned boundary
+
+
+mov al, -128
+add al, -5      ; Signed:   -128 + -5 = 123     OF = 1  Crossed signed boundary
+                ; Unsigned: 128 + 251 = 123     CF = 1  Crossed unsigned boundary
+
+
+mov al, -128
+add al, 1       ; Signed:   -128 + 1 = -127     OF = 0  Did not cross signed boundary
+                ; Unsigned: 128 + 1 = 129       CF = 0  Did not cross unsigned boundary
+
+
+mov al, -128
+sub al, 5       ; Signed:   -128 - 5 = 123      OF = 1  Crossed signed boundary
+                ; Unsigned: 128 - 5 = 123       CF = 0  Did not cross unsigned boundary
+
+
+mov al, -128
+sub al, -5      ; Signed:   -128 - (-5) = -128 + 5 = -123       OF = 0  Did not cross signed boundary
+                ; Unsigned: 128 - 251 = 133                     CF = 1  Crossed unsigned boundary
+
+
+mov al, 127
+sub al, 255     ; Signed:    127 - 255 = 127 - (-1) = 127 + 1 = -128    OF = 1  Crossed signed boundary
+                ; Unsigned:  127 - 255 = 128                            CF = 1  Crossed unsigned boundary
+
+
+mov al, 127
+sub al, -1      ; Same as previous since 255 == -1 in 8-bit
+
+
+mov al, 126
+sub al, 255     ; Signed:   126 - 255 = 126 - (-1) = 126 + 1 = 127      OF = 0  Did not cross signed boundary
+                ; Unsigned: 126 - 255 = 127                             CF = 1  Crossed signed boundary
 
 ;----------------------------------------------------------
 ; NEG
