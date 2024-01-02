@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-mov-xchg", "4-mov-xchg\4-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-add-sub", "4-add-sub\4-add-sub.vcxproj", "{DD0C2E57-3AD1-4444-88E8-8151F582C59F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-mul-div", "4-mul-div\4-mul-div.vcxproj", "{5D9670A3-8FD7-463C-83A4-BDD95ECC3977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -16,6 +18,8 @@ Global
 		{AFBA4325-7ACC-46D4-989A-CCC475E51CA9}.Debug|x64.Build.0 = Debug|x64
 		{DD0C2E57-3AD1-4444-88E8-8151F582C59F}.Debug|x64.ActiveCfg = Debug|x64
 		{DD0C2E57-3AD1-4444-88E8-8151F582C59F}.Debug|x64.Build.0 = Debug|x64
+		{5D9670A3-8FD7-463C-83A4-BDD95ECC3977}.Debug|x64.ActiveCfg = Debug|x64
+		{5D9670A3-8FD7-463C-83A4-BDD95ECC3977}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
