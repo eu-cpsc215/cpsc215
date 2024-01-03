@@ -19,3 +19,7 @@ Now use a `MOV` instruction using `RAX` as a memory operand to get the value of 
 2. Activity 2
 
 Add the value of the first element and last element in the array and store the result in `RDX`.
+
+3. Activity 3
+
+Use `LEA` to get the address of the first and last elements in the array. Store the address of the first element in `RAX` and the second in `RBX`.

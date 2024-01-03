@@ -21,6 +21,14 @@ main PROC                       ; Directive: Begin function labeled `main`
     mov rdx, [testArray]                ; Gets value of first element in the array
     add rdx, [testArray + 5 * 8]        ; Multiplies RDX by the last element. Why use 5 * 8 here? It means (array index * size of each element).
 
+    ; Activity 3
+
+    lea rax, [testArray]                ; Address of first element
+    lea rbx, [testArray + 5 * 8]        ; Address of second element
+
+    mov rcx, [rax]      ; Verify we got the right address. First element value is 0x20.
+    mov rdx, [rbx]      ; Verify we got the right address. Last element value is 0x25.
+
     ; -------------------- \/ EPILOGUE \/ --------------------
     xor rcx, rcx                ; Clear RCX
     call ExitProcess            ; Use Windows API to exit the process
