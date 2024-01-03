@@ -143,6 +143,8 @@ lea rax, [array1 + 16]  ; Third element ADDRESS
 mov rax, [array1 + 16]  ; Third element VALUE
 
 ; Sometimes LEA is used as a shortcut for arithmetic.
+; LEA allows a destination register not involved in the computation,
+; plus LEA does not affect flags.
 ; ---------------------------------------------------------
 mov rax, 2
 mov rbx, 3
