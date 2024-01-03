@@ -142,6 +142,12 @@ mov rax, [array1 + 8]   ; Second element VALUE
 lea rax, [array1 + 16]  ; Third element ADDRESS 
 mov rax, [array1 + 16]  ; Third element VALUE
 
+; Sometimes LEA is used as a shortcut for arithmetic.
+; ---------------------------------------------------------
+mov rax, 2
+mov rbx, 3
+lea rcx, [rbx + rax * 8]
+
 ; =========================================================
 
 lea rsp, [rsp + 18h] ; pop the three values off the stack that we pushed
