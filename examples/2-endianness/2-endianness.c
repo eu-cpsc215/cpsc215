@@ -13,7 +13,7 @@ int main()
 	// Use memory debug window and observe value of bytes in memory.
 
 	uint16_t twoByteInt = 0x2143;
-	bytePtr = (uint16_t*)&twoByteInt;
+	bytePtr = (uint8_t*)&twoByteInt;
 	first = bytePtr[0];
 	second = bytePtr[1];
 
