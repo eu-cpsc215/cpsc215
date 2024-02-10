@@ -27,6 +27,13 @@ mov ax, 1
 mov eax, 1
 mov rax, 1
 
+; Valid register-memory instructions using variables
+
+mov al, [byte_var]
+mov ax, [word_var]
+mov eax, [dword_var]
+mov rax, [qword_var]
+
 ; Valid memory-immediate instructions
 
 mov [byte_var], 2
