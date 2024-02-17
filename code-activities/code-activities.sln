@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-addressing", "4-addressin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5-branch-if-elseif-else", "5-branch-if-elseif-else\5-branch-if-elseif-else.vcxproj", "{F2F54CE0-BE45-4ED0-B5D0-6CEE76AEDF72}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5-looping-printf", "5-looping-printf\5-looping-printf.vcxproj", "{ADD9459E-8263-49BE-A7A7-D6EB8940EB3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -28,6 +30,8 @@ Global
 		{ADCE6C4E-C2C4-40BC-B12D-CCB9F9520EB3}.Debug|x64.Build.0 = Debug|x64
 		{F2F54CE0-BE45-4ED0-B5D0-6CEE76AEDF72}.Debug|x64.ActiveCfg = Debug|x64
 		{F2F54CE0-BE45-4ED0-B5D0-6CEE76AEDF72}.Debug|x64.Build.0 = Debug|x64
+		{ADD9459E-8263-49BE-A7A7-D6EB8940EB3B}.Debug|x64.ActiveCfg = Debug|x64
+		{ADD9459E-8263-49BE-A7A7-D6EB8940EB3B}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
