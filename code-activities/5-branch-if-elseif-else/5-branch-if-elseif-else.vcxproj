@@ -7,12 +7,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="4-addressing.asm" />
+    <MASM Include="5-branch-if-elseif-else.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ADCE6C4E-C2C4-40BC-B12D-CCB9F9520EB3}</ProjectGuid>
+    <ProjectGuid>{F2F54CE0-BE45-4ED0-B5D0-6CEE76AEDF72}</ProjectGuid>
     <RootNamespace>CPSC215Sandbox</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
