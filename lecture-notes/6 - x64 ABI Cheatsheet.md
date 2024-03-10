@@ -31,6 +31,10 @@ Any additional parameters passed on stack:
 - `[rsp + 30h]`
 - etc.
 
+## Return Values
+
+The `RAX` register is used to store the return value of a fuction.
+
 ## Register Ownership
 
 - Caller-saved registers: `RAX`, `RCX`, `RDX`, `R8`-`R11`
