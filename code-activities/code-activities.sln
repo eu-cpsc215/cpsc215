@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5-looping", "5-looping\5-lo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6-current-date", "6-current-date\6-current-date.vcxproj", "{7A722880-633E-4F60-9971-333CAE23F54A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6-call-a-function", "6-call-a-function\6-call-a-function.vcxproj", "{18B8F810-7851-430B-869B-CFCF2D9CFF67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -40,6 +42,8 @@ Global
 		{475E63DA-6E3D-40BB-BAE1-38625CECEF15}.Debug|x64.Build.0 = Debug|x64
 		{7A722880-633E-4F60-9971-333CAE23F54A}.Debug|x64.ActiveCfg = Debug|x64
 		{7A722880-633E-4F60-9971-333CAE23F54A}.Debug|x64.Build.0 = Debug|x64
+		{18B8F810-7851-430B-869B-CFCF2D9CFF67}.Debug|x64.ActiveCfg = Debug|x64
+		{18B8F810-7851-430B-869B-CFCF2D9CFF67}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
